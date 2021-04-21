@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "name": "Artist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "songs": {
+      "via": "artist",
+      "collection": "song"
+    },
+    "song_chords": {
+      "via": "artist",
+      "collection": "song-chord"
+    }
+  }
+}

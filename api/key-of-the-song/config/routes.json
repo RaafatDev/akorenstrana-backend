@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/key-of-the-songs",
+      "handler": "key-of-the-song.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/key-of-the-songs/count",
+      "handler": "key-of-the-song.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/key-of-the-songs/:id",
+      "handler": "key-of-the-song.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/key-of-the-songs",
+      "handler": "key-of-the-song.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/key-of-the-songs/:id",
+      "handler": "key-of-the-song.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/key-of-the-songs/:id",
+      "handler": "key-of-the-song.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

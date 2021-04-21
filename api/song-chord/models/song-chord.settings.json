@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "song_chords",
+  "info": {
+    "name": "song chord",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "lyrics": {
+      "type": "richtext"
+    },
+    "artist": {
+      "model": "artist",
+      "via": "song_chords"
+    },
+    "original_key": {
+      "type": "string"
+    }
+  }
+}

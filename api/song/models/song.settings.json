@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "songs",
+  "info": {
+    "name": "olllld SSong CChord",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "lyrics": {
+      "type": "richtext",
+      "required": false
+    },
+    "artist": {
+      "model": "artist",
+      "via": "songs"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "key_of_the_song": {
+      "model": "key-of-the-song",
+      "via": "songs"
+    }
+  }
+}

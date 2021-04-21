@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "key_of_the_songs",
+  "info": {
+    "name": "Key of the Song"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "songs": {
+      "via": "key_of_the_song",
+      "collection": "song"
+    }
+  }
+}

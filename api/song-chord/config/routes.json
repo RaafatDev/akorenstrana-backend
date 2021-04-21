@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/song-chords",
+      "handler": "song-chord.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/song-chords/count",
+      "handler": "song-chord.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/song-chords/:id",
+      "handler": "song-chord.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/song-chords",
+      "handler": "song-chord.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/song-chords/:id",
+      "handler": "song-chord.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/song-chords/:id",
+      "handler": "song-chord.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
